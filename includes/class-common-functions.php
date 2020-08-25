@@ -110,10 +110,10 @@ class Estimated_Dispatch_Date_For_WooCommerce_Functions {
 		$var_array = array();
 		
 		foreach ($available_variations as $var ){
-			$days = eddwc_get_variation($var['variation_id']);
+			$days = eddwc_get_variation($var->variation_id);
 			$prod_label = $this->$function_to_call($days);
 			if(empty($prod_label)){continue;}
-			$var_array[$var['variation_id']] = $prod_label;
+			$var_array[$var->variation_id] = $prod_label;
 		} 
 		return $var_array;
 	}	
@@ -175,7 +175,7 @@ class Estimated_Dispatch_Date_For_WooCommerce_Functions {
 		if(!empty($count)){ return $count;}
 		return false;	
 	}
-	
+
 	public function eddwc_cart_max_range(){
 		global $woocommerce;
 		$items = $woocommerce->cart->get_cart();
@@ -183,7 +183,7 @@ class Estimated_Dispatch_Date_For_WooCommerce_Functions {
 		$eddwc_min_range = array();
 		$eddwc_max_range = array();
 		$general_options = eddwc_option('product_general_date_settings');
-		
+
 		foreach($items as $item => $values) {
 			if (!empty($values['variation_id'])){
 				$item_id = $values['variation_id'];
@@ -191,7 +191,7 @@ class Estimated_Dispatch_Date_For_WooCommerce_Functions {
 				if(empty($item_range)){
 					$item_range = eddwc_get_variable($values['product_id']);
 				}
-				
+
 			} else {
 				$item_id = $values['product_id'];
 				$item_range = eddwc_get_simple($item_id);
