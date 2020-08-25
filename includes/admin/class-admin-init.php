@@ -105,11 +105,10 @@ class Estimated_Dispatch_Date_For_WooCommerce_Admin extends Estimated_Dispatch_D
 		if ( EDDWC_FILE == $plugin_file ) {
 			$settings_url = admin_url('admin.php?page=edd_wc_settings');
             $plugin_meta[] = sprintf('<a href="%s">%s</a>', $settings_url, __('Settings',EDDWC_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://wordpress.org/plugins/estimated-dispatch-date-woocommerce/faq/', __('F.A.Q',EDDWC_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://github.com/technofreaky/estimated-dispatch-date-woocommerce/', __('View On Github',EDDWC_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://github.com/technofreaky/estimated-dispatch-date-woocommerce/issues/', __('Report Issue',EDDWC_TXT) );
-            $plugin_meta[] = sprintf('&hearts; <a href="%s">%s</a>', 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=75TP8MABWJNSG', __('Donate',EDDWC_TXT) );
-            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'http://varunsridharan.in/plugin-support/', __('Contact Author',EDDWC_TXT) );
+            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://github.com/SK8-PTY-LTD/estimated-dispatch-date-woocommerce', __('View On Github',EDDWC_TXT) );
+            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'https://github.com/SK8-PTY-LTD/estimated-dispatch-date-woocommerce/issues/', __('Report Issue',EDDWC_TXT) );
+            $plugin_meta[] = sprintf('&hearts; <a href="%s">%s</a>', 'http://paypal.me/jacktator', __('Donate',EDDWC_TXT) );
+            $plugin_meta[] = sprintf('<a href="%s">%s</a>', 'mailto: support@sk8.tech', __('Contact Author',EDDWC_TXT) );
 		}
 		return $plugin_meta;
 	}	    

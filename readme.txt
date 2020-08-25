@@ -1,14 +1,14 @@
 === Estimated Dispatch Date For WooCommerce ===
 Contributors: varunms, arnisarbidans
-Author URI: http://varunsridharan.in/
-Plugin URL: https://wordpress.org/plugins/estimated-dispatch-date-woocommerce/
+Author URI: https://sk8.tech/
+Plugin URL: https://github.com/SK8-PTY-LTD/estimated-dispatch-date-woocommerce/
 Tags: WooCommerce,dispatch date,date,wc product dispatch, product dispatch date,product dispatch, product shipping,shipping date,woocommerce shipping
 Donate link: 
 Requires at least: 3.0
-Tested up to: 4.5
+Tested up to: 5.5
 WC requires at least: 1.0
 WC tested up to: 2.6
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 
